@@ -10,7 +10,7 @@ from spacy.lang.en.stop_words import STOP_WORDS as stopwords
 from bs4 import BeautifulSoup
 import unicodedata
 from textblob import TextBlob
-
+nlp = spacy.load('en_core_web_sm')
 
 
 # Note that I am starting each with '_' becasue all this methods are internal and private methods 
@@ -55,7 +55,7 @@ def _get_uppercase_counts(x):
     return len([t for t in x.split() if t.isupper()])
 
 # Contraction to Expansion
-def _get_cont_exp(x):
+def _cont_exp(x):
     contractions = { 
     "ain't": "am not",
     "aren't": "are not",
