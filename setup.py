@@ -5,7 +5,7 @@ with open('README.md', 'r') as file:
 
 setuptools.setup(
     name = 'preprocess_mikelakoju', #Remember this name must be unique globally
-    version = '0.0.1',
+    version = '0.0.3',
     author_email = 'lakojum@yahoo.com',
     description = 'This is a preprocessing package for NLP',
     long_description = long_description,
